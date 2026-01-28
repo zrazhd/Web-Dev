@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<style>
+#last {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333333;
+}
+
+.last {
+  float: left;
+}
+
+li.last a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+li.last a:hover {
+  background-color: #111111;
+}
+</style>
+</head>
+
+
+<body>
+
+<h2>An unordered HTML list</h2>
+<ul>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>  
+
+
+<h2>Unordered List with Disc Bullets</h2>
+<ul style="list-style-type:disc;">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>  
+
+
+<h2>Unordered List with Circle Bullets</h2>
+<ul style="list-style-type:circle;">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>  
+
+
+<h2>Unordered List with Square Bullets</h2>
+<ul style="list-style-type:square;">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>
+
+
+<h2>Unordered List without Bullets</h2>
+<ul style="list-style-type:none;">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>  
+
+
+<h2>A Nested List</h2>
+<p>Lists can be nested (list inside list):</p>
+<ul>
+  <li>Coffee</li>
+  <li>Tea
+    <ul>
+      <li>Black tea</li>
+      <li>Green tea</li>
+    </ul>
+  </li>
+  <li>Milk</li>
+</ul>
+
+
+<h2>Navigation Menu</h2>
+<p>In this example, we use CSS to style the list horizontally, to create a navigation menu:</p>
+<ul id="last">
+  <li class="last"><a href="#home">Home</a></li>
+  <li class="last"><a href="#news">News</a></li>
+  <li class="last"><a href="#contact">Contact</a></li>
+  <li class="last"><a href="#about">About</a></li>
+</ul>
+
+</body>
+</html>
+

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.table1{
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+.table1 th, .table1 td {
+  padding: 15px;
+}
+
+.table2 {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+.table2 th, .table2 td {
+  padding-top: 10px;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+.table3 {
+  border: 1px solid black;
+}
+.table3 table {
+  border-spacing: 30px;
+}
+
+</style>
+</head>
+<body>
+
+<h2>Cellpadding</h2>
+<p>Cell padding specifies the space between the cell content and its borders.</p>
+
+<table style="width:100%" class="table1">
+  <tr>
+    <th class="table1">Firstname</th>
+    <th class="table1">Lastname</th> 
+    <th class="table1">Age</th>
+  </tr>
+  <tr>
+    <td class="table1">Jill</td>
+    <td class="table1">Smith</td>
+    <td class="table1">50</td>
+  </tr>
+  <tr>
+    <td class="table1">Eve</td>
+    <td class="table1">Jackson</td>
+    <td class="table1">94</td>
+  </tr>
+  <tr>
+    <td class="table1">John</td>
+    <td class="table1">Doe</td>
+    <td class="table1">80</td>
+  </tr>
+</table>
+
+<p><strong>Tip:</strong> Try to change the padding to 5px.</p>
+
+
+<h2>Cellpadding - top - bottom - left - right </h2>
+<p>We can specify different padding for all fours sides of the cell content.</p>
+
+<table style="width:100%" class="table2">
+  <tr>
+    <th class="table2">Firstname</th>
+    <th class="table2">Lastname</th> 
+    <th class="table2">Age</th>
+  </tr>
+  <tr>
+    <td class="table2">Jill</td>
+    <td class="table2">Smith</td>
+    <td class="table2">50</td>
+  </tr>
+  <tr>
+    <td class="table2">Eve</td>
+    <td class="table2">Jackson</td>
+    <td class="table2">94</td>
+  </tr>
+  <tr>
+    <td class="table2">John</td>
+    <td class="table2">Doe</td>
+    <td class="table2">80</td>
+  </tr>
+</table>
+
+
+
+
+
+<h2>Cellspacing</h2>
+<p>Change the space between the cells with the border-spacing property.</p>
+
+<table style="width:100%" class="table3">
+  <tr>
+    <th class="table3">Firstname</th>
+    <th class="table3">Lastname</th> 
+    <th class="table3">Age</th>
+  </tr>
+  <tr>
+    <td class="table3">Jill</td>
+    <td class="table3">Smith</td>
+    <td class="table3">50</td>
+  </tr>
+  <tr>
+    <td class="table3">Eve</td>
+    <td class="table3">Jackson</td>
+    <td class="table3">94</td>
+  </tr>
+  <tr>
+    <td class="table3">John</td>
+    <td class="table3">Doe</td>
+    <td class="table3">80</td>
+  </tr>
+</table>
+
+
+
+</body>
+</html>
+
