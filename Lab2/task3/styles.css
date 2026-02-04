@@ -1,0 +1,264 @@
+h1, h2, h3, h4, h5, h6{
+    font-family: "Mona Sans","Mona Sans Header Fallback",-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+}
+p, button{
+    font-family: "Mona Sans","Mona Sans Fallback",-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+}
+p, summary{
+    color: #59636e;
+}
+
+summary:hover{
+    cursor: pointer;
+}
+
+details > summary::marker{
+    content: "› ";
+}
+
+
+h1{
+    font-size: 64px;
+    font-weight: 800;
+    text-align: center;
+}
+
+.intro{
+    text-align: center;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+/* BLACK-BUTTONS */
+
+.black-button{
+    background: linear-gradient(#3b3e42, #1c2024);
+    color: #ffffff;
+    transition: background-color 0.2s ease-in-out;   
+    border-width: 0;
+    border-radius: 0.375rem;
+    font-size: 1rem; 
+    line-height: 1;
+    margin-bottom: 30px;
+}
+.black-button:hover{
+    background: linear-gradient(#4a5056,#1c2024);
+    cursor: pointer;
+}
+
+.main-button{
+    width: 204px;
+    height: 48px;
+    padding: 16px 24px;
+    font-weight: 500;  
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.team-button{
+    width: 357px;
+    height: 48px;
+    padding: 16px 24px;
+    font-weight: 700;
+}
+
+.enterprise-button{
+    width: 170px;
+    height: 48px;
+    padding: 16px 8px;
+    font-weight: 700;
+}
+
+/* WHITE-BUTTONS */
+.free-button{
+    width: 357px;
+    height: 48px;
+    padding: 16px 24px;
+    background-color: white;
+    border-radius: 0.375rem;
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 1;
+    border-width: 1px;
+    border-color: #cecece;
+    border-style: solid;
+    margin-bottom: 30px;
+}
+.free-button:hover{
+    cursor: pointer;
+    border-width: 2px;
+    border-color: black;
+}
+.contact-button{
+    width: 170px;
+    height: 48px;
+    padding: 16px 24px;
+    background-color: white;
+    border-radius: 0.375rem;
+    font-weight: 700;
+    line-height: 1;
+    border-width: 1px;
+    border-color: #cecece;
+    border-style: solid;
+}
+.contact-button:hover{
+    cursor: pointer;
+    border-width: 2px;
+    border-color: black;
+}
+
+.starting-at{
+    width: 68px;
+    height: 19px;
+    padding: 4px 16px;
+    border: 1px solid #d1d9e0;
+    border-radius: 0.75rem;
+    line-height: 1.5;
+    font-size: 0.875rem;
+    font-weight: 400;
+    margin-top: -15px;
+    margin-bottom: -16px;
+    text-align: center;
+    margin-left: 125px;
+}
+
+
+
+/* ADDITIONAL ADD-ONS */
+
+.additional {
+    display: grid;
+    grid-template-columns: repeat(3, 394px); 
+    gap: 30px; 
+    justify-content: center; 
+    padding: 20px;
+}
+
+.additional button {
+    width: 100%; 
+    height: 290px;
+    padding: 32px;
+    border: none;
+    border-radius: 0.375rem;
+    background-color: white;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+    text-align: left;
+    font-size: 16px;
+    line-height: 24px;
+    cursor: pointer;
+    
+    display: flex;
+    flex-direction: column;
+}
+
+.models h4{
+    margin-top: 0px;
+}
+
+.additional button:hover{
+    cursor: pointer;
+    transform: scale(1.03);
+}
+
+
+
+.details{
+    background-color: #f6f8fa;
+    border-radius: 0.4rem;
+    flex:2;
+    margin: -1rem;
+    padding: 1rem;
+}
+.enterprise, .free, .team{
+    box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.32);
+    border-radius: 1.2rem;
+    line-height: 1.5;
+    display: flex;
+    padding: 1rem;
+    flex-direction: column;
+    max-width: 360px;
+    
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    margin: 10px 10px;
+    align-items:safe;
+    
+    
+}
+header summary{
+    margin: 10px;
+}
+header p{
+    margin: 0px;
+}
+header img{
+    position: absolute;
+    margin-top: 5px;
+}
+header .platform{
+    margin-left: 50px;
+}
+main h3{
+    text-align: center;
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+}
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 100px;
+}
+.team, .enterprise{
+    margin-left: -360px;
+}
+
+
+
+
+.info{
+    text-align: center;
+    margin-top: -22px;
+}
+.enter-buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.enterprise{
+    display: flex;
+    border: 7px solid #0d72e8;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+}
+h2{
+    text-align: center;
+}
+sup{
+    color: #626c76;
+}
+.recommend{
+    text-align: center;
+    background-color: #0d72e8;
+    margin-top: -43px;
+    border-radius: 15px;
+    width: 405px;
+    margin-left: -22.5px;
+    color: white;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    font-weight: 600;
+    font-size: 0.875rem;
+    padding-top: 3px;
+}
+.dollars{
+    font-size: 48px;
+    line-height: 64px;
+}
