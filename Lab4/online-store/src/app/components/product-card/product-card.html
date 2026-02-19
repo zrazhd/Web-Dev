@@ -1,7 +1,11 @@
 <div class="card">
-  <a [href]="product.link" target="_blank">
-    <img [src]="product.image" [alt]="product.name" class="card-img" />
-  </a>
+  <!-- <a [href]="product.link" target="_blank"> -->
+  <div class="slider">
+    <button class="nav prev" (click)="prevImage()">‹</button>
+    <img [src]="getImages()[currentImageIndex]" [alt]="product.name" class="card-img" />
+    <button class="nav next" (click)="nextImage()">›</button>
+  </div>
+  <!-- </a> -->
 
   <div class="card-body">
     <h3 class="card-title">{{ product.name }}</h3>

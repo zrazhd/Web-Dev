@@ -12,6 +12,34 @@ import { Product } from '../../models/product.model';
 export class ProductCard {
   @Input() product!: Product;
 
+  currentImageIndex = 0;
+
+ nextImage() {
+  const images = this.getImages();
+
+  if (images.length > 1) {
+    this.currentImageIndex =
+      (this.currentImageIndex + 1) % images.length;
+    }
+  }
+
+  prevImage() {
+    const images = this.getImages();
+
+    if (images.length > 1) {
+      this.currentImageIndex =
+        (this.currentImageIndex - 1 + images.length) % images.length;
+    }
+  }
+
+  getImages() : string[] {
+    if (!this.product.images || this.product.images.length === 0) {
+      return [this.product.image];
+    }
+
+    return this.product.images;
+  }
+
   getStars(rating: number): number[] {
     return Array(Math.floor(rating)).fill(0);
   }

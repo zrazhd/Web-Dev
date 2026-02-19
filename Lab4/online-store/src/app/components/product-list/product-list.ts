@@ -20,6 +20,9 @@ export class ProductList {
       rating: 5,
       image: 'https://resources.cdn-kaspi.kz/img/m/p/hf3/h65/87295470731294.png?format=gallery-medium',
       images: [
+        'https://resources.cdn-kaspi.kz/img/m/p/hf3/h65/87295470731294.png?format=gallery-medium',
+        'https://resources.cdn-kaspi.kz/img/m/p/he0/ha4/87295470764062.png?format=gallery-medium',
+        'https://resources.cdn-kaspi.kz/img/m/p/h12/hfe/87295470796830.png?format=gallery-medium'
       ],
       link: 'https://kaspi.kz/shop/p/apple-iphone-16-128gb-chernyi-123713453/?c=750000000'
     },
@@ -27,10 +30,13 @@ export class ProductList {
       id: 2,
       name: 'Samsung Galaxy S24 256GB',
       description: 'Флагманский смартфон Samsung с AI-функциями и процессором Snapdragon 8 Gen 3. AMOLED дисплей 6.2" и тройная камера.',
-      price: 289990,
+      price: 343629,
       rating: 4.7,
       image: 'https://resources.cdn-kaspi.kz/img/m/p/h6f/h23/84963273736222.png?format=gallery-medium',
       images: [
+        'https://resources.cdn-kaspi.kz/img/m/p/h6f/h23/84963273736222.png?format=gallery-medium',
+        'https://resources.cdn-kaspi.kz/img/m/p/h7b/h6d/84963273867294.png?format=gallery-medium',
+        'https://resources.cdn-kaspi.kz/img/m/p/h71/hb2/84963114254366.jpg?format=gallery-medium'
       ],
       link: 'https://kaspi.kz/shop/p/samsung-galaxy-s24-5g-8-gb-256-gb-chernyi-116042629/?c=111810000'
     },
@@ -38,10 +44,13 @@ export class ProductList {
       id: 3,
       name: 'MacBook Air M2 256GB',
       description: 'Представляем Apple MacBook Air 13 2022 — ультрабук, который сочетает в себе высокую производительность, изящный дизайн и долговечность.',
-      price: 589990,
+      price: 439092,
       rating: 4.9,
       image: 'https://resources.cdn-kaspi.kz/img/m/p/p37/p87/22158172.jpg?format=gallery-medium',
       images: [
+        'https://resources.cdn-kaspi.kz/img/m/p/p37/p87/22158172.jpg?format=gallery-medium',
+        'https://resources.cdn-kaspi.kz/img/m/p/p8c/p5d/22160744.png?format=gallery-medium',
+        'https://resources.cdn-kaspi.kz/img/m/p/p3e/p5a/22160753.png?format=gallery-medium'
       ],
       link: 'https://kaspi.kz/shop/p/apple-macbook-air-13-2022-13-6-16-gb-ssd-256-gb-macos-mc7x4-133963854/?c=111810000'
     },
@@ -49,10 +58,13 @@ export class ProductList {
       id: 4,
       name: 'Sony PlayStation 5 Slim',
       description: 'Иммерсивный игровой опыт в тонком форм-фактореПриготовьтесь встречать новую PlayStation 5 Slim. Она станет улучшей.',
-      price: 259990,
+      price: 301898,
       rating: 4.8,
       image: 'https://resources.cdn-kaspi.kz/img/m/p/hf1/h03/84526695677982.jpg?format=gallery-medium',
       images: [
+        'https://resources.cdn-kaspi.kz/img/m/p/hf1/h03/84526695677982.jpg?format=gallery-medium',
+        'https://resources.cdn-kaspi.kz/img/m/p/pef/p29/78474502.png?format=gallery-medium',
+        'https://resources.cdn-kaspi.kz/img/m/p/p43/p2a/78474505.png?format=gallery-medium'
       ],
       link: 'https://kaspi.kz/shop/p/sony-playstation-5-slim-114696098/?c=111810000'
     },
@@ -60,10 +72,13 @@ export class ProductList {
       id: 5,
       name: 'Apple AirPods Pro 2',
       description: 'Беспроводные наушники с активным шумоподавлением H2 и Adaptive Audio. До 30 часов с зарядным футляром.',
-      price: 119990,
+      price: 103880,
       rating: 4.8,
       image: 'https://resources.cdn-kaspi.kz/img/m/p/ha3/h07/84108189630494.jpg?format=gallery-medium',
       images: [
+        'https://resources.cdn-kaspi.kz/img/m/p/ha3/h07/84108189630494.jpg?format=gallery-medium',
+        'https://resources.cdn-kaspi.kz/img/m/p/h03/h0e/84108189696030.jpg?format=gallery-medium',
+        'https://resources.cdn-kaspi.kz/img/m/p/h14/h8a/84108189761566.jpg?format=gallery-medium'
       ],
       link: 'https://kaspi.kz/shop/p/naushniki-apple-airpods-pro-2nd-generation-with-wireless-magsafe-charging-case-belyi-113677582/?c=111810000'
     },
@@ -71,10 +86,13 @@ export class ProductList {
       id: 6,
       name: 'Samsung 55" QLED 4K Smart TV',
       description: 'Телевизор Samsung QLED с разрешением 4K UHD и процессором Quantum 4K. Smart TV на платформе Tizen.',
-      price: 219990,
+      price: 799990,
       rating: 4.6,
       image: 'https://resources.cdn-kaspi.kz/img/m/p/pa0/pe9/73690520.jpeg?format=gallery-medium',
       images: [
+        'https://resources.cdn-kaspi.kz/img/m/p/pa0/pe9/73690520.jpeg?format=gallery-medium',
+        'https://resources.cdn-kaspi.kz/img/m/p/p37/pe6/73690521.jpeg?format=gallery-medium',
+        'https://resources.cdn-kaspi.kz/img/m/p/pcd/pe2/73690522.jpeg?format=gallery-medium'
       ],
       link: 'https://kaspi.kz/shop/p/samsung-qled-qe55ls03fauxce-140-sm-chernyi-145890835/?c=111810000'
     },
@@ -86,6 +104,7 @@ export class ProductList {
       rating: 4.5,
       image: 'https://resources.cdn-kaspi.kz/img/m/p/p18/p96/64168413.png?format=gallery-medium',
       images: [
+        'https://resources.cdn-kaspi.kz/img/m/p/p18/p96/64168413.png?format=gallery-medium',
         'https://resources.cdn-kaspi.kz/img/m/p/p29/p1e/64464409.jpg?format=gallery-medium',
         'https://resources.cdn-kaspi.kz/img/m/p/pfc/p95/64168414.png?format=gallery-medium'
       ],
@@ -95,10 +114,13 @@ export class ProductList {
       id: 8,
       name: 'Apple Watch Series 9 45mm',
       description: 'Смарт-часы Apple Watch Series 9 с чипом S9 и функцией Double Tap. Always-On дисплей и мониторинг здоровья.',
-      price: 159990,
+      price: 224530,
       rating: 4.7,
       image: 'https://resources.cdn-kaspi.kz/img/m/p/p9a/pd7/3360618.png?format=gallery-medium',
       images: [
+        'https://resources.cdn-kaspi.kz/img/m/p/p9a/pd7/3360618.png?format=gallery-medium',
+        'https://resources.cdn-kaspi.kz/img/m/p/p7e/pd7/3360619.png?format=gallery-medium',
+        'https://resources.cdn-kaspi.kz/img/m/p/pd0/p60/3360752.png?format=gallery-medium'
       ],
       link: 'https://kaspi.kz/shop/p/apple-watch-series-10-s-m-42-mm-cherno-sinii-128578467/?c=111810000'
     },
@@ -106,10 +128,13 @@ export class ProductList {
       id: 9,
       name: 'Dyson V15 Detect',
       description: 'Беспроводной пылесос Dyson с лазерным обнаружением пыли и мощностью 240 Вт.',
-      price: 249990,
+      price: 330532,
       rating: 4.7,
       image: 'https://resources.cdn-kaspi.kz/img/m/p/pa4/p32/77965055.jpg?format=gallery-medium',
       images: [
+        'https://resources.cdn-kaspi.kz/img/m/p/pa4/p32/77965055.jpg?format=gallery-medium',
+        'https://resources.cdn-kaspi.kz/img/m/p/p75/p00/68409016.bin?format=gallery-medium',
+        'https://resources.cdn-kaspi.kz/img/m/p/pf8/p32/77965058.jpg?format=gallery-medium'
       ],
       link: 'https://kaspi.kz/shop/p/dyson-v15-detect-absolute-sv47-serebristyi-113691132/?c=111810000'
     },
@@ -117,10 +142,13 @@ export class ProductList {
       id: 10,
       name: 'Lenovo IdeaPad 5 Pro 16" i5',
       description: 'Ноутбук Lenovo с процессором Intel Core i5-12500H и IPS-дисплеем 2.5K 120Hz. 16 ГБ ОЗУ и SSD 512 ГБ.',
-      price: 199990,
+      price: 309698,
       rating: 4.5,
       image: 'https://resources.cdn-kaspi.kz/img/m/p/p11/p2c/13052980.jpg?format=gallery-medium',
       images: [
+        'https://resources.cdn-kaspi.kz/img/m/p/p11/p2c/13052980.jpg?format=gallery-medium',
+        'https://resources.cdn-kaspi.kz/img/m/p/p49/p2c/13052982.png?format=gallery-medium',
+        'https://resources.cdn-kaspi.kz/img/m/p/p82/p2c/13052984.png?format=gallery-medium'
       ],
       link: 'https://kaspi.kz/shop/p/lenovo-ideapad-slim-3-15irh8-15-6-16-gb-ssd-512-gb-win-11-pro-83em0607rk-131384254/?c=111810000'
     }
