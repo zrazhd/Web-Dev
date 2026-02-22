@@ -1,0 +1,18 @@
+<div class="list-header">
+  <h1>Kaspi catalog</h1>
+  <p>{{ products.length }} products</p>
+</div>
+
+<div class="product-grid">
+  @for (product of products; track product.id){
+    <app-product-card
+      [product]="product"
+      (remove) = "handleRemove($event)">
+    </app-product-card>
+  } @empty {
+    <div class="empty-container">
+      <p class="empty-msg">There are no products in this category.</p>
+      <button (click)="reloadPage()" class="btn-refresh">Refresh page</button>
+    </div>
+  }
+</div>

@@ -1,0 +1,30 @@
+<header class="app-header">
+  <div class="header-inner">
+    <span class="logo">🛒 Kaspi Store</span>
+  </div>
+</header>
+
+<nav class="category-menu">
+  <button
+  (click)="selectCategory(null)"
+  [class.active]="selectedCategoryId === null"
+  class="category-btn">
+  All products
+  </button>
+
+  @for (cat of categories; track cat.id) {
+    <button 
+      (click)="selectCategory(cat.id)"
+      [class.active]="selectedCategoryId === cat.id">
+      {{ cat.name }}
+    </button>
+  }
+</nav>
+
+<main>
+ 
+  <app-product-list 
+  [products]="filteredProducts"
+  (productRemoved)="deleteFromGlobal($event)"></app-product-list>
+  
+</main>

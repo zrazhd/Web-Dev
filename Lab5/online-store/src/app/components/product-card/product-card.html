@@ -1,0 +1,33 @@
+<div class="card">
+  <!-- <a [href]="product.link" target="_blank"> -->
+  <div class="slider">
+    <button class="nav prev" (click)="prevImage()">‹</button>
+    <img [src]="getImages()[currentImageIndex]" [alt]="product.name" class="card-img" />
+    <button class="nav next" (click)="nextImage()">›</button>
+  </div>
+  <!-- </a> -->
+
+  <div class="card-body">
+    <h3 class="card-title">{{ product.name }}</h3>
+    <p class="card-desc">{{ product.description }}</p>
+
+    <div class="rating">
+      <span *ngFor="let s of getStars(product.rating)" class="star filled">★</span>
+      <span *ngFor="let s of getEmptyStars(product.rating)" class="star">☆</span>
+      <span class="rating-num">{{ product.rating }}</span>
+    </div>
+
+    <div class="price">{{ product.price | number }} ₸</div>
+
+    <div class="actions">
+      <a [href]="product.link" target="_blank" class="btn btn-primary">Купить</a>
+      <button (click)="shareOnWhatsApp()" class="btn btn-wa">WhatsApp</button>
+      <button (click)="shareOnTelegram()" class="btn btn-tg">Telegram</button>
+
+      <button (click)="likeProduct()" class="btn btn-like">❤ {{ product.likes }}</button>
+      <button (click)="deleteProduct()" class="btn btn-delete">Delete</button>
+
+
+    </div>
+  </div>
+</div> 
