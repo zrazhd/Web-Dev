@@ -1,0 +1,45 @@
+<div class="card">
+  <div class="header">
+    <span class="eyebrow">Music Library</span>
+    <h1>New Album</h1>
+  </div>
+
+  @if (error()) {
+    <p class="error">{{ error() }}</p>
+  }
+
+  <label class="field">
+    <span>User ID (1–10)</span>
+    <input
+      type="number"
+      [ngModel]="userId()"
+      (ngModelChange)="userId.set($event)"
+      min="1"
+      max="10"
+      placeholder="1"
+    />
+  </label>
+
+  <label class="field">
+    <span>Album Title</span>
+    <input
+      type="text"
+      [ngModel]="title()"
+      (ngModelChange)="title.set($event)"
+      placeholder="Enter album title..."
+    />
+  </label>
+
+  <div class="divider"></div>
+
+  <div class="actions">
+    <button (click)="submit()" [disabled]="creating()">
+      @if (creating()) {
+        <span class="spinner"></span> Creating…
+      } @else {
+        Create Album
+      }
+    </button>
+    <button class="secondary" (click)="cancel()">Cancel</button>
+  </div>
+</div>

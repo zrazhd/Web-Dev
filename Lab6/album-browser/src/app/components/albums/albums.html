@@ -1,0 +1,50 @@
+<div class="page">
+
+  <div class="page-header">
+    <div>
+      <span class="eyebrow">Library</span>
+      <h1>Albums</h1>
+    </div>
+    <div style="display:flex; align-items:center; gap:10px; flex-wrap:wrap;">
+      @if (!loading() && !error() && albums().length > 0) {
+        <span class="count-badge">{{ albums().length }} albums</span>
+      }
+      <a class="btn-new" [routerLink]="['/albums/new']">+ New Album</a>
+    </div>
+  </div>
+
+  @if (loading()) {
+    <div class="state">
+      <div class="spinner"></div>
+      <p>Loading albums...</p>
+    </div>
+  } @else if (error()) {
+    <div class="state error">
+      <p class="error-text">{{ error() }}</p>
+      <button class="btn-retry" (click)="load()">Retry</button>
+    </div>
+  } @else if (albums().length === 0) {
+    <div class="state">
+      <p>No albums found.</p>
+    </div>
+  } @else {
+    <div class="list">
+      @for (album of albums(); track album.id) {
+        <div class="item">
+          <a class="link" [routerLink]="['/albums', album.id]">
+            <span class="album-id">#{{ album.id }}</span>
+            <span class="album-title">{{ album.title }}</span>
+          </a>
+          <button class="btn-delete" (click)="deleteAlbum(album.id, $event)">
+            Delete
+          </button>
+        </div>
+      }
+    </div>
+
+    <div class="footer">
+      <p class="footnote">{{ albums().length }} albums total</p>
+    </div>
+  }
+
+</div>

@@ -1,0 +1,48 @@
+<div class="page">
+
+  <div class="page-header">
+    <div>
+      <span class="eyebrow">Music Library</span>
+      <h1>Album #{{ albumId() }} Photos</h1>
+    </div>
+    @if (!loading() && !error() && photos().length > 0) {
+      <span class="count-badge">{{ photos().length }} photos</span>
+    }
+  </div>
+
+  @if (loading()) {
+    <div class="state">
+      <div class="spinner"></div>
+      <p>Loading photos...</p>
+    </div>
+  } @else if (error()) {
+    <div class="state error">
+      <p class="error-text">{{ error() }}</p>
+    </div>
+  } @else if (photos().length === 0) {
+    <div class="state">
+      <p>No photos found for this album.</p>
+    </div>
+  } @else {
+    <div class="grid">
+      @for (photo of photos(); track photo.id) {
+        <div class="photo">
+          <img [src]="'https://picsum.photos/seed/' + photo.id + '/150/150'" [alt]="photo.title" />
+          <p class="photo-title">{{ photo.title }}</p>
+        </div>
+      }
+    </div>
+
+    <div class="footer">
+      <p class="footnote">Showing all {{ photos().length }} photos</p>
+      <button class="btn" (click)="back()">← Back to Album</button>
+    </div>
+  }
+
+  @if (!loading() && (error() || photos().length === 0)) {
+    <div class="footer">
+      <button class="btn" (click)="back()">← Back to Album</button>
+    </div>
+  }
+
+</div>
